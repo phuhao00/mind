@@ -17,6 +17,7 @@ func (f *FSM)Run(time.Time){
         f.activeController.Process()
         return
     }
+    
     if f.passiveController!=nil&&f.passiveController.Ready(){
         f.passiveController.Process()
         return
